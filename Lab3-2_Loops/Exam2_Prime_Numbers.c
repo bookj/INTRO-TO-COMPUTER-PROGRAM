@@ -1,25 +1,22 @@
-//5710110137
-//prime numbers
+// 5710110137
+// Prime Numbers
 #include <stdio.h>
-int main()
-{
-    int i,j,n,num;
+int main() {
+    int i, j, n, num;
     printf("Enter Number : ");
-    scanf("%d",&num);
-    for (i=1;i<=num;i++)
-    {
-        n=0;
-        for (j=1;j<=i;j++)
-        {
-            if (i%j==0)
+    scanf("%d", &num);
+    for (i = 1; i <= num; i++) {
+        n = 0;
+        for (j = 1; j <= i; j++)
+            if (i%j == 0)
                 n++;
-        }
-            if (n==2)
-                printf("%d ",i);
+        if (n == 2)
+            printf("%d ", i);
     }
     printf("\n\n");
     system("PAUSE");
 }
+
 /*{
 int n,i,j,r,c;
     printf("Find Prime number\n");
